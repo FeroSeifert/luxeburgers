@@ -16,10 +16,10 @@
   <header>
     <div class="nav-left">
       <nav>
-        <a href="#">Home</a>
-        <a href="#">About</a>
+        <a href="web.php">Home</a>
+        <a href="about.php">About</a>
         <a href="#" onclick="goMenu()">Menu</a>
-        <a href="#">Locations</a>
+        <a href="locations.php">Locations</a>
       </nav>
     </div>
 
@@ -36,10 +36,10 @@
 
   <!-- CATEGORY BAR (ONLY VISIBLE ON MENU PAGE) -->
   <div class="category-bar">
-    <a href="#">Burgers</a>
-    <a href="#">Snacks</a>
-    <a href="#">Drinks</a>
-    <a href="#">Dessert</a>
+    <a href="burgers.php">Burgers</a>
+    <a href="snacks.php">Snacks</a>
+    <a href="drinks.php">Drinks</a>
+    <a href="dessert.php">Dessert</a>
   </div>
 
   <section class="hero">
