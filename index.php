@@ -8,5 +8,6 @@
 <body>
     <? include('opdrachten/opdracht_1.php'); ?>
     <a href="web.php">Naar web.php</a>
+    <a href="opdrachten/opdracht_1.php">Naar opdracht_1.php</a>
 </body>
 </html>
