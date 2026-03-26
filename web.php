@@ -5,14 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>LuxeBurgers</title>
-
   <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
-
-  <!-- TOP NAV LIKE YOUR EXAMPLE -->
   <header>
     <div class="nav-left">
       <nav>
@@ -34,7 +30,6 @@
     </div>
   </header>
 
-  <!-- CATEGORY BAR (ONLY VISIBLE ON MENU PAGE) -->
   <div class="category-bar">
     <a href="burgers.php">Burgers</a>
     <a href="snacks.php">Snacks</a>
@@ -48,25 +43,9 @@
     <button class="cta-btn">Reserveer nu</button>
   </section>
 
-  <section class="gallery-wrapper">
-    <div class="left-column">
-      <div class="img-box"></div>
-      <div class="img-box"></div>
-      <div class="img-box"></div>
-    </div>
-
-    <div class="right-grid">
-      <div class="img-box"></div>
-      <div class="img-box"></div>
-      <div class="img-box"></div>
-      <div class="img-box"></div>
-      <div class="img-box"></div>
-      <div class="img-box"></div>
-      <div class="img-box"></div>
-      <div class="img-box"></div>
-      <div class="img-box"></div>
-    </div>
-  </section>
+  <div class="right-grid">
+    <div class="img-box"></div>
+  </div>
 
   <footer>
     © 2026 LuxeBurgers — Alle rechten voorbehouden

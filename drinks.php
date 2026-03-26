@@ -29,7 +29,7 @@
             </nav>
         </div>
     </header>
-    
+
     <div class="category-bar">
         <a href="burgers.php">Burgers</a>
         <a href="snacks.php">Snacks</a>
