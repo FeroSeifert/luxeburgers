@@ -43,7 +43,7 @@
     <button class="cta-btn">Reserveer nu</button>
   </section>
 
-  <div class="right-grid">
+  <div>
     <div class="img-box"></div>
   </div>
 

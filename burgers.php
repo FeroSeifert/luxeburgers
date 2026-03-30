@@ -57,16 +57,19 @@
         <p>Ambachtelijke premium burgers in een rustige, stijlvolle omgeving met veel ruimte en comfort.</p>
     </section>
 
-    <section class="burger-grid">
-        <?php foreach ($burgers as $burger): ?>
-            <div class="burger-card">
-                <h3><?= htmlspecialchars($burger['naam']) ?></h3>
-                <p class="price">€<?= number_format($burger['prijs'], 2, ',', '.') ?></p>
-                <p class="allergens">Allergenen: <?= htmlspecialchars($burger['allergenen']) ?></p>
-            </div>
-        <?php endforeach; ?>
+    <section class="gallery-wrapper">
+        <div class="right-grid">
+            <div class="img-box"></div>
+            <div class="img-box"></div>
+            <div class="img-box"></div>
+            <div class="img-box"></div>
+            <div class="img-box"></div>
+            <div class="img-box"></div>
+            <div class="img-box"></div>
+            <div class="img-box"></div>
+            <div class="img-box"></div>
+        </div>
     </section>
-
 
     <footer>
         © 2026 LuxeBurgers — Alle rechten voorbehouden
