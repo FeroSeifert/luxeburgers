@@ -37,6 +37,21 @@
         <a href="dessert.php">Dessert</a>
     </div>
 
+    <?php
+    require_once("includes/pdo.php");
+    /**
+     * @var PDO $connect
+     */
+    ?>
+
+    <?php
+    $query = "SELECT * FROM gerechten";
+    $stmt = $pdo->prepare($query);
+    $stmt->execute();
+    $burgers = $stmt->fetchAll();
+    print_r($burgers);
+    ?>
+
     <section class="hero">
         <h1>Onze Burgers</h1>
         <p>Ambachtelijke premium burgers in een rustige, stijlvolle omgeving met veel ruimte en comfort.</p>

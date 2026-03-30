@@ -1,0 +1,22 @@
+# meja02 mei 2025 :
+# dockerfile inline, dus geen apart bestand meer nodig
+# image keyword verwijderd: dus altijd een build
+# php versie 8.0 -> 8.4
+# mysql versie 5.7 -> lts (8.x)
+name: Luxeburgers
+services:
+  web:
+    container_name: php_web_restaurant
+    build:
+      context: .
+      # pipe symbol op volgende regel laten staan!!!
+      dockerfile_inline: |
+        FROM php:8.4-apache
+        RUN docker-php-ext-install pdo pdo_mysql
+    restart: always
+    ports:
+      - "8000:80"
+    volumes:
+      - ./html:/var/www/html
+  volumes:
+    db_data:
