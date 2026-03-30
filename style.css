@@ -138,27 +138,26 @@ body.menu-page .category-bar {
     border-radius: 20%;
 }
 
-.burger-row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    padding: 40px 0;
+.burger-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 per rij */
+    gap: 30px;
+    padding: 60px 80px;
 }
 
 .burger-card {
-    width: 260px;
-    padding: 20px;
-    border: 2px solid #d9d9d9;
+    background: #ffffff; /* WIT VAKJE */
     border-radius: 18px;
-    background: #fff;
+    border: 1px solid #e6e6e6;
+    padding: 24px;
     text-align: center;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-    transition: transform 0.2s ease;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.06);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .burger-card:hover {
-    transform: translateY(-4px);
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.12);
 }
 
 .burger-card h3 {
@@ -169,12 +168,26 @@ body.menu-page .category-bar {
 
 .burger-card .price {
     font-size: 1.2rem;
-    font-weight: 500;
+    font-weight: 600;
     color: #c0392b;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 }
 
 .burger-card .allergens {
     font-size: 0.9rem;
-    color: #555;
+    color: #666;
+}
+
+/* Responsive: 2 per rij */
+@media (max-width: 900px) {
+    .burger-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Responsive: 1 per rij */
+@media (max-width: 600px) {
+    .burger-grid {
+        grid-template-columns: 1fr;
+    }
 }
