@@ -59,7 +59,9 @@
 
     <section class="gallery-wrapper">
         <div class="right-grid">
-            <div class="img-box"></div>
+            <div class="img-box">
+                <p>Hier komen de burgers te staan</p>
+            </div>
             <div class="img-box"></div>
             <div class="img-box"></div>
             <div class="img-box"></div>
