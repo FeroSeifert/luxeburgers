@@ -25,7 +25,6 @@
       <nav>
         <a href="#">Franchise</a>
         <a href="#">Jobs</a>
-        <a href="#">Allergens</a>
       </nav>
     </div>
   </header>

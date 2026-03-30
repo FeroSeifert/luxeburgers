@@ -39,7 +39,7 @@
 
   <section class="hero">
     <h1>About Us</h1>
-    <p>Welcome to LuxeBurgers! We are a team of passionate food enthusiasts dedicated to creating the finest burgers in a minimalist setting.</p>
+    <p>Welcome to LuxeBurgers! We are a team of passionate food enthusiasts dedicated to creating the finest burgers you could ever eat. We also focus on having low prices for our customers. So come visit us and taste the difference!</p>
   </section>
 
   <section class="hero">
