@@ -49,7 +49,6 @@
     $stmt = $pdo->prepare($query);
     $stmt->execute();
     $burgers = $stmt->fetchAll();
-    print_r($burgers);
     ?>
 
     <section class="hero">
@@ -57,20 +56,20 @@
         <p>Ambachtelijke premium burgers in een rustige, stijlvolle omgeving met veel ruimte en comfort.</p>
     </section>
 
-    <section class="gallery-wrapper">
-        <div class="right-grid">
-            <div class="img-box">
-                <p>Hier komen de burgers te staan</p>
+    <section class="burger-row">
+        <?php foreach ($burgers as $burger): ?>
+            <div class="burger-card">
+                <h3><?= $burger['naam'] ?></h3>
+                <p class="price">€<?= number_format($burger['prijs'], 2, ',', '.') ?></p>
+                <?php if (!empty($burger['allergenen'])): ?>
+                    <p class="allergens">
+                        Allergenen: <?= $burger['allergenen'] ?>
+                    </p>
+                <?php else: ?>
+                    <p class="allergens">Geen allergenen</p>
+                <?php endif; ?>
             </div>
-            <div class="img-box"></div>
-            <div class="img-box"></div>
-            <div class="img-box"></div>
-            <div class="img-box"></div>
-            <div class="img-box"></div>
-            <div class="img-box"></div>
-            <div class="img-box"></div>
-            <div class="img-box"></div>
-        </div>
+        <?php endforeach; ?>
     </section>
 
     <footer>

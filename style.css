@@ -137,3 +137,48 @@ body.menu-page .category-bar {
     height: 50px;
     border-radius: 20%;
 }
+
+.burger-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+.burger-card {
+    width: 260px;
+    padding: 20px;
+    border: 2px solid #d9d9d9;
+    border-radius: 18px;
+    background: #fff;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease;
+}
+
+.burger-card:hover {
+    transform: translateY(-4px);
+}
+
+.burger-card h3 {
+    margin-bottom: 8px;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.burger-card .price {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #c0392b;
+    margin-bottom: 10px;
+}
+
+.burger-card .allergens {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.spacing a {
+    margin-right: 1.5rem;
+}

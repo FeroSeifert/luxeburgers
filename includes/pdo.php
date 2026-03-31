@@ -20,7 +20,6 @@ $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
 try {
     // verbinding maken
     $pdo = new PDO($dsn, $user, $pass, $opties);
-    echo "de verbinding is gelukt";
 } catch (PDOException $e) {
     // foutmelding bij verbinding
     echo "de verbinding is mislukt";

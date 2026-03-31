@@ -25,7 +25,7 @@
       <nav class="spacing">
         <a href="#">Franchise</a>
         <a href="#">Jobs</a>
-        <a href="loginform.php">Login</a>
+        <a href="login.php">Login</a>
       </nav>
     </div>
   </header>
@@ -37,15 +37,20 @@
     <a href="dessert.php">Dessert</a>
   </div>
 
-  <section class="hero">
-    <h1>LuxeBurgers, Minimalistische Sfeer</h1>
-    <p>Ambachtelijke premium burgers in een rustige, stijlvolle omgeving met veel ruimte en comfort.</p>
-    <button class="cta-btn">Reserveer nu</button>
-  </section>
+  <div class="login-container">
+    <h2>Login</h2>
 
-  <div>
-    <div class="img-box"></div>
+    <form action="login.php" method="POST" class="login-form">
+      <label for="username">Username</label>
+      <input type="username" id="username" name="username" required>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" required>
+
+      <button type="submit">Inloggen</button>
+    </form>
   </div>
+
 
   <footer>
     © 2026 LuxeBurgers — Alle rechten voorbehouden
