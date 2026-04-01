@@ -12,7 +12,7 @@
   <header>
     <div class="nav-left">
       <nav>
-        <a href="web.php">Home</a>
+        <a href="index.php">Home</a>
         <a href="about.php">About</a>
         <a href="#" onclick="goMenu()">Menu</a>
         <a href="locations.php">Locations</a>
@@ -39,7 +39,9 @@
 
   <section class="hero">
     <h1>About Us</h1>
-    <p>Welcome to LuxeBurgers! We are a team of passionate food enthusiasts dedicated to creating the finest burgers you could ever eat. We also focus on having low prices for our customers. So come visit us and taste the difference!</p>
+    <p>Welcome to LuxeBurgers! We are a team of passionate food enthusiasts dedicated to creating the finest burgers you
+      could ever eat. We also focus on having low prices for our customers. So come visit us and taste the difference!
+    </p>
   </section>
 
   <section class="hero">
@@ -48,7 +50,7 @@
       <a href="#"><img src="img/facebook.png" alt="Facebook"></a>
       <a href="#"><img src="img/twitter.png" alt="Twitter"></a>
       <a href="#"><img src="img/instagram.png" alt="Instagram"></a>
-    </div>  
+    </div>
   </section>
 
   <footer>

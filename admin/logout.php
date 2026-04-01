@@ -4,7 +4,7 @@
 session_start();
 
 // verwijder de sessie variabelen
-session_unset()
+session_unset();
 
 //vernietig de sessie
 session_destroy();

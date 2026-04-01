@@ -12,7 +12,7 @@
     <header>
         <div class="nav-left">
             <nav>
-                <a href="web.php">Home</a>
+                <a href="index.php">Home</a>
                 <a href="about.php">About</a>
                 <a href="#" onclick="goMenu()">Menu</a>
                 <a href="locations.php">Locations</a>
