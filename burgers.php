@@ -37,6 +37,12 @@
         <a href="dessert.php">Dessert</a>
     </div>
 
+    <form method="GET" class="search-bar">
+        <input type="text" name="q" placeholder="Zoek een burger..."
+            value="<?= isset($_GET['q']) ? htmlspecialchars($_GET['q']) : '' ?>">
+        <button type="submit">Zoeken</button>
+    </form>
+
     <?php
     require_once("includes/pdo.php");
     /**
@@ -45,9 +51,19 @@
     ?>
 
     <?php
-    $query = "SELECT * FROM gerechten";
-    $stmt = $pdo->prepare($query);
-    $stmt->execute();
+    $burgers = [];
+
+    if (isset($_GET['q']) && $_GET['q'] !== '') {
+        $search = "%" . $_GET['q'] . "%";
+        $query = "SELECT * FROM gerechten WHERE naam LIKE ?";
+        $stmt = $pdo->prepare($query);
+        $stmt->execute([$search]);
+    } else {
+        $query = "SELECT * FROM gerechten";
+        $stmt = $pdo->prepare($query);
+        $stmt->execute();
+    }
+
     $burgers = $stmt->fetchAll();
     ?>
 

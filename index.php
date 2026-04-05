@@ -39,7 +39,7 @@
 
   <section class="hero">
     <h1>Welcome to LuxeBurgers</h1>
-    <p>The most crazy delicious looking and tasing burger you will have ever tasted!</p>
+    <p>The most crazy delicious looking and tasting burger you will have ever eaten!</p>
     <a href="burgers.php" class="cta-btn">Order Now</a>
   </section>
 
