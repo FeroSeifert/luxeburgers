@@ -31,7 +31,13 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 }
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Admin — Burgers Editen</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
 
 <body>
 

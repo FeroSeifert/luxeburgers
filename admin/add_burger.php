@@ -20,8 +20,15 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     exit;
 }
 ?>
+
 <!DOCTYPE html>
-<html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Admin — Burgers beheren</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
 
 <body>
 

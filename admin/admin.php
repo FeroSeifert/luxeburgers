@@ -19,7 +19,7 @@ $burgers = $stmt->fetchAll();
 <head>
     <meta charset="UTF-8">
     <title>Admin — Burgers beheren</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
