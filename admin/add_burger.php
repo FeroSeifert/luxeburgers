@@ -7,11 +7,13 @@ if (!isset($_SESSION["isLoggedIn"])) {
 
 require_once("../includes/pdo.php");
 
+// slaat de waarden van de burger op in variabelen
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $naam = $_POST["naam"];
     $prijs = $_POST["prijs"];
     $allergenen = $_POST["allergenen"];
 
+    // hij verstuurd de ingevulde gegevens naar de database
     $query = "INSERT INTO gerechten (naam, prijs, allergenen) VALUES (?, ?, ?)";
     $stmt = $pdo->prepare($query);
     $stmt->execute([$naam, $prijs, $allergenen]);

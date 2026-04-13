@@ -1,5 +1,6 @@
 <?php
 session_start();
+// Als de gebruiker niet is ingelogd, terugsturen naar loginpagina
 if (!isset($_SESSION["isLoggedIn"])) {
     header("Location: login.php");
     exit;
@@ -10,6 +11,7 @@ require_once("../includes/pdo.php");
 $id = $_GET["id"];
 
 // Fetch burger
+// ? Is een placeholder die wordt vervangen met het id van de burger die bewerkt wordt.
 $stmt = $pdo->prepare("SELECT * FROM gerechten WHERE id = ?");
 $stmt->execute([$id]);
 $burger = $stmt->fetch();
@@ -18,11 +20,13 @@ if (!$burger) {
     die("Burger niet gevonden");
 }
 
+// slaat de waarden van de burger op in variabelen
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $naam = $_POST["naam"];
     $prijs = $_POST["prijs"];
     $allergenen = $_POST["allergenen"];
 
+    // Update burger in database met de nieuwe waarden
     $update = $pdo->prepare("UPDATE gerechten SET naam=?, prijs=?, allergenen=? WHERE id=?");
     $update->execute([$naam, $prijs, $allergenen, $id]);
 

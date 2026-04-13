@@ -13,6 +13,7 @@ $stmt = $pdo->prepare($query);
 $stmt->execute();
 $burgers = $stmt->fetchAll();
 ?>
+
 <!DOCTYPE html>
 <html lang="nl">
 
